@@ -50,3 +50,11 @@ Create a heatmap for the new DataFrame.
 Find a hotel from the cities' coordinates using Google's Maps and Places API, and Search Nearby feature.
 Store the name of the first hotel in the DataFrame.
 Add pop-up markers to the heatmap that display information about the city, current maximum temperature, and a hotel in the city.
+
+
+Let's go on Holiday!
+With planning any vacation, knowing the weather is crucial for packing and preparing the itenerary! 
+
+Deliverable 1 retreives weather data
+Deliverable 2: Create a Customer Travel Destinations Map
+Deliverable 3: Create a Travel Itinerary Map
