@@ -1,60 +1,31 @@
 # World_Weather_Analysis
+using APIs in jupyter notebook to plan a holiday based on weather analysis
 
-At the most fundamental level, Jack needs help answering a question: How might we provide real-time suggestions for our client's ideal hotels? Your first task was to define what you meant by "ideal." So, over the course of the conversation, you narrowed that to hotels that were (1) within a given range of latitude and longitude and that (2) provided the right kind of weather for the client.
+# Let's Go On Holiday!
+With everyone getting vaccinated, planning a trip is back on the agenda. This analysis imports gmaps, citipy, numpy, resources, and utilizes google maps API to retrieve weather data, create a custom travel map, and an itenerary for a warm weather road trip around Brazil's beach cities with accomodation.
 
-
-Basic Project Plan
-Here's an outline of your project plan:
+## Basic Project Plan
 
 Task: Collect and analyze weather data across cities worldwide.
 Purpose: PlanMyTrip will use the data to recommend ideal hotels based on clients' weather preferences.
-Method: Create a Pandas DataFrame with 500 or more of the world's unique cities and their weather data in real time. This process will entail collecting, analyzing, and visualizing the data.
-Your analysis of the data will be split into three main parts, or stages.
-
-Collect the Data
-
-Use the NumPy module to generate more than 1,500 random latitudes and longitudes.
-Use the citipy module to list the nearest city to the latitudes and longitudes.
-Use the OpenWeatherMap API to request the current weather data from each unique city in your list.
-Parse the JSON data from the API request.
-Collect the following data from the JSON file and add it to a DataFrame:
-City, country, and date
-Latitude and longitude
-Maximum temperature
-Humidity
-Cloudiness
-Wind speed
-Exploratory Analysis with Visualization
-
-Create scatter plots of the weather data for the following comparisons:
-Latitude versus temperature
-Latitude versus humidity
-Latitude versus cloudiness
-Latitude versus wind speed
-Determine the correlations for the following weather data:
-Latitude and temperature
-Latitude and humidity
-Latitude and cloudiness
-Latitude and wind speed
-Create a series of heatmaps using the Google Maps and Places API that showcases the following:
-Latitude and temperature
-Latitude and humidity
-Latitude and cloudiness
-Latitude and wind speed
-Visualize Travel Data
-
-Create a heatmap with pop-up markers that can display information on specific cities based on a customer's travel preferences. Complete these steps:
-
-Filter the Pandas DataFrame based on user inputs for a minimum and maximum temperature.
-Create a heatmap for the new DataFrame.
-Find a hotel from the cities' coordinates using Google's Maps and Places API, and Search Nearby feature.
-Store the name of the first hotel in the DataFrame.
-Add pop-up markers to the heatmap that display information about the city, current maximum temperature, and a hotel in the city.
+Method: Create a Pandas DataFrame with world's unique cities and their weather data in real time. This process will entail collecting, analyzing, and visualizing the data. Then, perform API calls to retreive weather. Finally, input customer weather preferences and generate an itenerary.
 
 
-Let's go on Holiday!
-With planning any vacation, knowing the weather is crucial for packing and preparing the itenerary! 
+### Step 1: Retreive Weather Data
+- uses random() to generate 2000 Lats and Lngs
+- retreice nearest city
+- perform an API call with OpenWeatherMap to retreive Weather Description
+- 
+### Step 2: Create a Customer Travel Destinations Map
+- use input to retreive customer weather preferences to identify potential travel destinations and nearby hotels
+- For this analysis the customer prefers to travel somewhere warm between 75-90 degrees F
 
-Deliverable 1 retreives weather data
-Deliverable 2: Create a Customer Travel Destinations Map
-Deliverable 3: Create a Travel Itinerary Map
+![WeatherPy_Vacation_map](https://user-images.githubusercontent.com/79612565/115981023-b6046580-a545-11eb-9fe8-0ddaa85c28d1.png)
+
+### Step 3: Create a Travel Itinerary & Map
+- use Google Directions API to create an itenerary that shows the route between four cities and possible travel destinations with hotel accomodations
+
+![weatherpy_travel_map_markers](https://user-images.githubusercontent.com/79612565/115981030-c74d7200-a545-11eb-95c5-76fb53a7c55e.png)
+![WeatherPy_travel_map](https://user-images.githubusercontent.com/79612565/115981027-c3b9eb00-a545-11eb-9d1f-06ef72a2c6d0.png)
+
+
