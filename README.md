@@ -13,7 +13,7 @@ With everyone getting vaccinated, planning a trip is back on the agenda. This an
 
 ### Step 1: Retreive Weather Data
 - uses random() to generate 2000 Lats and Lngs
-- retreice nearest city
+- retreive nearest city
 - perform an API call with OpenWeatherMap to retreive Weather Description
 
 ### Step 2: Create a Customer Travel Destinations Map
