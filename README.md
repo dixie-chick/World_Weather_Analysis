@@ -6,9 +6,9 @@ With everyone getting vaccinated, planning a trip is back on the agenda. This an
 
 ## Basic Project Plan
 
-Task: Collect and analyze weather data across cities worldwide.
-Purpose: PlanMyTrip will use the data to recommend ideal hotels based on clients' weather preferences.
-Method: Create a Pandas DataFrame with world's unique cities and their weather data in real time. This process will entail collecting, analyzing, and visualizing the data. Then, perform API calls to retreive weather. Finally, input customer weather preferences and generate an itenerary.
+> **Task:** Collect and analyze weather data across cities worldwide.
+> **Purpose:** PlanMyTrip will use the data to recommend ideal hotels based on clients' weather preferences.
+> **Method:** Create a Pandas DataFrame with world's unique cities and their weather data in real time. This process will entail collecting, analyzing, and visualizing the data. Then, perform API calls to retreive weather. Finally, input customer weather preferences and generate an itenerary.
 
 
 ### Step 1: Retreive Weather Data
